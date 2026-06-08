@@ -15,7 +15,9 @@ func step0() {
 	pkg.ModifyInt(&b, 100)
 	pkg.ModifyElemt(&str, "cabane123")
 	pkg.ModifyElemt(&c, 1<<4)
-	fmt.Println("- step0 -> a =", a, "\n- step0 -> b =", b, "\n- step0 -> str =", str, "\n- step0 -> c =", c)
+	d := []int{1, 2, 3}
+	pkg.ModifySlice(d)
+	fmt.Println("- step0 -> a =", a, "\n- step0 -> b =", b, "\n- step0 -> str =", str, "\n- step0 -> c =", c, "\n- step0 -> d =", d)
 }
 
 func main() {
